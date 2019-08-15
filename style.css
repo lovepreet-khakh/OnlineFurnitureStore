@@ -1,0 +1,339 @@
+*
+{
+ padding: 0;
+ margin: 0;
+ font-family: sans-serif;  
+ background: #0A2A29;    
+}
+
+header
+{
+
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul
+{
+list-style-type: none;
+    float: right;
+    margin-top: 25px;
+}
+
+ul li
+{
+    display: inline-block; 
+}
+
+ul li a
+{
+color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+}
+
+ul li a:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img
+{
+ float: left;
+ width: 100px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.main
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul li.active a
+{
+    background-color: #fff;
+    color: #000;
+}
+
+.title
+{
+    color: #ffffc0;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+}
+
+.container
+{
+    width: 990px;
+    min-height: 540px;
+    padding-top: 140px;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: center;
+}
+
+.container .checkout{
+	margin-top:20px;
+	margin-left:835px;
+	background-color:#000;
+	color: #fff;
+	font-size:20px;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+	
+}
+.container .checkout:hover{
+	 background-color: #fff;
+    color: #000;
+}
+
+.cartcontainer{
+	width: 990px;
+    min-height: 540px;
+    padding-top: 140px;
+    position: center;
+	display:flex;
+}
+
+.cartcontainer form{
+	width:300px;
+	
+}
+
+.cartcontainer label{
+	color: #fff;
+	
+    text-decoration: none;
+    padding: 5px 20px;
+	font-size:25px;
+	text-align:center;
+    border: 0px solid #fff;
+}
+
+.cartcontainer .submit{
+	color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+}
+
+.cartcontainer .radio{
+	position:relative;
+}
+
+.cartcontainer .total{
+	background-color:#000;
+	padding-top:2px;
+	width:50%;
+	border:1px solid #fff;
+}
+
+.cartcontainer input
+{
+background-color:#000;
+color:#fff;	
+width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container .box
+{
+ position: relative;
+    width: 300px;
+    height: 255px;
+    background: #000;
+   margin: 15px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.container .box .imgbox
+{
+ position: relative;  
+    overflow: hidden;
+}
+
+.container .box .imgbox img
+{
+ width: 300px;
+  height: 227.5px;
+}
+
+
+
+.container .box .details form
+{
+    position: absolute;
+    top:198px;
+    
+    
+}
+
+.container .box .details select
+{
+ color: #fff;
+margin-left:70px;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+    background-color: #000;
+    color: #fff;
+}
+
+.container .box .details label
+{
+	color: #fff;
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+    background-color: #000;
+    color: #fff;      
+
+}
+
+
+.container .box .details label:hover
+{
+	background-color: #fff;
+    color: #000;
+
+}
+
+.container .box .details select:hover
+{
+ background-color: #fff;
+    color: #000;
+
+}
+
+.container .box .details input
+{
+margin-left:1px;
+margin-bottom:1px;
+  color: #fff;
+  height:27.5px;
+  width:300px;
+  margin-top:2px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+   background-color: #000;
+   
+}
+
+.container .box .details input:hover
+{
+ background-color: #fff;
+    color: #000;
+        transition: 0.6s ease;
+
+}
+
+#hidden{
+	visibility:hidden;
+}
+
+.cartcontainer table{
+	margin-left:120px;
+width:70%;
+    border: 1px solid #fff;
+color:#fff;
+font-family:monospace;
+font-size:25px;
+text-align:left;
+}
+
+#gg
+{
+    width: 100%;
+    height: 80%;
+    margin-left: 260px;
+}
+
+
+
+
+
+@media screen and (max-width:320px) {
+.container{
+width:320px;
+}	
+	ul{
+	float:left;
+}
+#gg
+    {
+        display: none;
+    }
+h1{
+	display:none;
+}
+.logo{
+	display:none;
+	
+}
+}
+
+@media screen and (max-width:640px) {
+	header{
+	height:auto;
+	}
+.container{
+width:70%;
+}	
+ul{
+	float:left;
+	
+}
+#gg
+    {
+        display: none;
+    }
+h1{
+	display:none;
+}	
+.logo{
+	display:none;
+}
+.container .checkout{
+	padding-top:10px;
+	margin-left:0px;
+}
+}
+
+@media screen and (max-width:959px) {
+.container{
+width:100%;
+}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
